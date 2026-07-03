@@ -107,3 +107,9 @@ su -c "pm install -r /sdcard/game_v2.apk"
 - Rotate aktivitas (jangan monoton)
 - Jangan jalan 24/7 nonstop
 - Sesekali swipe random / tap area kosong
+
+## References
+
+- `references/deployment.md` — setup di HP rooted, GitHub sync, context length config
+- `scripts/bot_loop.sh` — automation loop (screenshot → action → delay)
+- `scripts/account_manager.sh` — manage multi-account (create/switch/remove)

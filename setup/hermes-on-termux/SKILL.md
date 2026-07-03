@@ -133,6 +133,20 @@ Parallel build + download to save time — download is I/O bound, cmake is CPU b
 
 `-ngl 0` = CPU only (no GPU on most phones). `-c 2048` = context window (tight for RAM).
 
+### Context Length vs RAM
+
+Context length = RAM hog. Rough formula: context_len * n_layers * bytes_per_element.
+
+| Model | 8K ctx | 32K ctx | 64K ctx | 128K ctx |
+|-------|--------|---------|---------|----------|
+| Qwen2.5-0.5B | ~300MB | ~500MB | ~800MB | ~1.5GB |
+| SmolLM3-3B | ~500MB | ~1.2GB | ~2GB | ~4GB |
+| Hermes-8B | ~800MB | ~2.5GB | ~5GB | OOM |
+
+**Rule**: 0.5B model → 128K OK. 3B model → 64K max. 8B model → 16-32K max on 12GB phone.
+
+Set in config via `hermes config edit` (never `patch` on config.yaml):
+
 ### Convenience Scripts
 
 Create `~/bin/qwen-server` and `~/bin/qwen` for easy access. See **[shortcut-scripts.md](references/shortcut-scripts.md)** for full scripts.

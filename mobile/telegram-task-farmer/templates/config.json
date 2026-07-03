@@ -1,0 +1,15 @@
+{
+  "bot_username": "@NamaBotTask",
+  "mode": "all",
+  "delay_between_tasks_sec": [5, 15],
+  "delay_between_accounts_sec": [30, 60],
+  "max_tasks_per_account": 50,
+  "cooldown_after_accounts_min": 10,
+  "accounts": [
+    {"name": "akun_utama", "user_id": 0},
+    {"name": "farm1", "user_id": 10},
+    {"name": "farm2", "user_id": 11}
+  ],
+  "screenshots_dir": "/sdcard/tg_farm/",
+  "log_file": "~/tg_farm_log.txt"
+}
