@@ -38,6 +38,19 @@
     "use_count": 2,
     "view_count": 2
   },
+  "game-botter": {
+    "archived_at": null,
+    "created_at": "2026-07-03T03:50:52.462377+00:00",
+    "created_by": null,
+    "last_patched_at": "2026-07-03T03:51:08.492855+00:00",
+    "last_used_at": null,
+    "last_viewed_at": null,
+    "patch_count": 2,
+    "pinned": false,
+    "state": "active",
+    "use_count": 0,
+    "view_count": 0
+  },
   "github-auth": {
     "archived_at": null,
     "created_at": "2026-07-03T02:42:49.574702+00:00",
